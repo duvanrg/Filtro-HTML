@@ -1,0 +1,14 @@
+*{
+    src: url(../fonts/Kollektif.ttf);
+    src: url(../fonts/Kollektif-Bold.ttf);
+    src: url(../fonts/Kollektif-BoldItalic.ttf);
+    src: url(../fonts/Kollektif-Italic.ttf);
+    font-family: 'Kollektif', monospace;
+}
+
+p{
+    font-size: large;
+    background-color: aqua;
+    border-radius: 25px;
+    padding: 25px;
+}
