@@ -133,9 +133,10 @@ header {
 }
 
 #solicita-ya .pasos {
-    width: 56%;
+    width: 56.5%;
     display: grid;
     grid-template-areas: 'pasos1 pasos2 pasos3';
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     padding: 25px 0;
 }
@@ -176,7 +177,7 @@ header {
 #solicita-ya .text {
     display: flex;
     align-items: center;
-    font-size: 21px;
+    font-size: 19px;
     height: 6em;
     text-align: center;
     line-height: 1.4em;
@@ -201,4 +202,10 @@ header {
 #tecnicos .text {
     font-size: 32px;
     text-align: center;
+}
+
+#precios {
+    display: grid;
+    grid-template-areas: 'tittle tittle tittle' 'text text text' 'tipo1 tipo2 tipo3' 'T&C T&C T&C';
+    padding: 60px 0;
 }
