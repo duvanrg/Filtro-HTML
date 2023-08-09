@@ -1,14 +1,96 @@
-*{
-    src: url(../fonts/Kollektif.ttf);
-    src: url(../fonts/Kollektif-Bold.ttf);
-    src: url(../fonts/Kollektif-BoldItalic.ttf);
-    src: url(../fonts/Kollektif-Italic.ttf);
-    font-family: 'Kollektif', monospace;
+@font-face {
+    font-family: 'Kollektif';
+    src: url(../fonts/Kollektif.ttf) format('truetype');
+    src: url(../fonts/Kollektif-Bold.ttf) format('truetype');
+    src: url(../fonts/Kollektif-BoldItalic.ttf) format('truetype');
+    src: url(../fonts/Kollektif-Italic.ttf) format('truetype');
 }
 
-p{
-    font-size: large;
-    background-color: aqua;
-    border-radius: 25px;
-    padding: 25px;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kollektif', monospace;
+
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+button {
+    color: #fff;
+    background-color: #0050f5;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 2em;
+    padding: 17px 0px;
+    border: none;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90vh;
+}
+
+.banner .image4 {
+    height: 90vh;
+}
+
+.repair-now {
+    display: grid;
+    grid-template-areas: 'logo logo' 'text1 text1' 'text2 text2' 'button1 button2' 'image2 image3';
+    gap: 15px;
+    padding-left: 45px;
+
+}
+
+.repair-now .image1 {
+    grid-area: logo;
+    height: 10em;
+    align-self: self-end;
+    margin-top: 50px;
+}
+
+.repair-now .text1 {
+    grid-area: text1;
+    font-size: 45px;
+    align-self: center;
+    line-height: 1.2em;
+}
+
+.repair-now .text2 {
+    grid-area: text2;
+    font-size: 24px;
+    align-self: self-end;
+}
+
+.repair-now .button1 {
+    grid-area: button1;
+    align-self: center;
+    justify-self: end;
+}
+
+.repair-now .button2 {
+    grid-area: button2;
+    align-self: center;
+    justify-self: start;
+}
+
+.repair-now .image2 {
+    grid-area: image2;
+    height: 6rem;
+    align-self: center;
+    justify-self: end;
+}
+
+.repair-now .image3 {
+    grid-area: image3;
+    height: 7rem;
+    align-self: center;
+    justify-self: start;
 }
