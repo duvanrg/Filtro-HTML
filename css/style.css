@@ -38,6 +38,12 @@ header {
     height: 100vh;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
 .globe {
     height: 45px;
     position: absolute;
@@ -206,6 +212,177 @@ header {
 
 #precios {
     display: grid;
-    grid-template-areas: 'tittle tittle tittle' 'text text text' 'tipo1 tipo2 tipo3' 'T&C T&C T&C';
+    grid-template-areas: 'tittle tittle tittle' 'texto texto texto' 'tipo1 tipo2 tipo3' 'TyC TyC TyC';
+    grid-template-columns: repeat(3, 1fr );
+    row-gap: 25px;
     padding: 60px 0;
+    width: 80%;
+    justify-self: center;
 }
+
+#precios .tittle {
+    grid-area: tittle;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+#precios .texto {
+    grid-area: texto;
+    text-align: center;
+    font-size: 32px;
+}
+
+#precios .tipo1 {
+    grid-area: tipo1;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#precios .tipo2 {
+    grid-area: tipo2;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#precios .tipo3 {
+    grid-area: tipo3;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#precios .subtittle {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+#precios .image {
+    height: 225px;
+    margin: 25px 0;
+}
+
+#precios .precio {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#precios .TyC {
+    grid-area: TyC;
+    text-align: center;
+    font-size: 11px;
+}
+
+#dispositivos {
+    display: grid;
+    grid-template-areas: 'tittle tittle tittle' 'texto texto texto' 'dispo1 dispo2 dispo3' 'TyC TyC TyC';
+    grid-template-columns: repeat(3, 1fr );
+    row-gap: 25px;
+    padding: 60px 0;
+    width: 80%;
+    justify-self: center;
+}
+
+#dispositivos .tittle {
+    grid-area: tittle;
+    text-align: center;
+    font-size: 55px;
+}
+
+#dispositivos .text {
+    grid-area: texto;
+    text-align: center;
+    font-size: 32px;
+}
+
+#dispositivos .dispo1 {
+    grid-area: dispo1;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: 25px;
+}
+
+#dispositivos .dispo2 {
+    grid-area: dispo2;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: 25px;
+}
+
+#dispositivos .dispo3 {
+    grid-area: dispo3;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: 25px;
+}
+
+#dispositivos .image {
+    height: 400px;
+}
+
+#dispositivos .dispo {
+    font-size: 45px;
+}
+
+#dispositivos .TyC {
+    grid-area: TyC;
+    text-align: center;
+    font-size: 11px;
+}
+
+#Col {
+    display: grid;
+    grid-template-areas: 'tittle tittle' 'image1 image2' 'texto texto';
+    background: url(../images/Campesinos.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    place-content: center;
+    gap: 55px 30px;
+}
+
+#Col .tittle {
+    grid-area: tittle;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 100;
+}
+
+#Col .amarillo {
+    color: #d1b22a;
+}
+
+#Col .azul {
+    color: #113a7c;
+}
+
+#Col .rojo {
+    color: #b82f3f;
+}
+
+#Col .image1 {
+    grid-area: image1;
+    height: 150px;
+    justify-self: end;
+}
+
+#Col .image2 {
+    grid-area: image2;
+    height: 150px;
+    justify-self: start;
+}
+
+#Col .text {
+    grid-area: texto;
+    text-align: center;
+    font-size: 32px;
+    width: 70%;
+}
+
