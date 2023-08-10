@@ -1,15 +1,21 @@
 @font-face {
     font-family: 'Kollektif';
-    src: url(../fonts/Kollektif.ttf) format('truetype');
     src: url(../fonts/Kollektif-Bold.ttf) format('truetype');
     src: url(../fonts/Kollektif-BoldItalic.ttf) format('truetype');
     src: url(../fonts/Kollektif-Italic.ttf) format('truetype');
+    src: url(../fonts/Kollektif.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad';
+    src: url(../fonts/myriad-pro-CL/MyriadPro-Light.otf);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Kollektif', monospace;
+    letter-spacing: 0px;
+    font-family: 'Myriad', monospace;
 }
 
 body {
@@ -24,13 +30,25 @@ p {
     margin-inline-end: 0px;
 }
 
-button {
-    color: #fff;
+a {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    height: 72px;
+    width: 246px;
+    border-radius: 50px;
     background-color: #0050f5;
-    font-size: 25px;
-    width: 225px;
-    border-radius: 2em;
-    padding: 22px 0px;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 43px;
+    border-radius: 50px;
     border: none;
 }
 
@@ -51,68 +69,90 @@ main {
     top: 40px;
 }
 
+#cuerpo .tittle {
+    font-size: 57px;
+    line-height: 77px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cuerpo .text {
+    font-size: 31px;
+    line-height: 43px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#cuerpo .subtittle {
+    font-size: 57px;
+    line-height: 79px;
+    font-weight: bold;
+}
+
 #banner {
     width: 100%;
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 100vh;
 }
 
 #banner .image4 {
     width: 135vh;
     position: absolute;
-    right: -18%;
+    right: -20%;
     top: -25%;
 }
 
-.repair-now {
+#banner .repair-now {
     display: grid;
     grid-template-areas: 'logo logo' 'text1 text1' 'text2 text2' 'button1 button2' 'image2 image3';
     grid-template-rows: auto auto 50px auto auto;
     column-gap: 25px;
-    padding-left: 75px;
+    width: 800px;
+    justify-self: center;
 }
 
-.repair-now .image1 {
+#banner .repair-now .image1 {
     grid-area: logo;
     height: 10em;
     align-self: self-end;
     margin-top: 0px;
 }
 
-.repair-now .text1 {
+#banner .repair-now .text1 {
     grid-area: text1;
-    font-size: 50px;
+    line-height: 79px;
+    text-align: left;
     align-self: center;
-    line-height: 1.4em;
+    font-weight: bold;
 }
 
-.repair-now .text2 {
+#banner .repair-now .text2 {
     grid-area: text2;
-    font-size: 27px;
+    text-align: left;
     align-self: self-end;
 }
 
-.repair-now .button1 {
+#banner .repair-now .button1 {
     grid-area: button1;
     align-self: center;
     justify-self: end;
 }
 
-.repair-now .button2 {
+#banner .repair-now .button2 {
     grid-area: button2;
     align-self: center;
     justify-self: start;
 }
 
-.repair-now .image2 {
+#banner .repair-now .image2 {
     grid-area: image2;
     height: 7rem;
     align-self: self-start;
     justify-self: end;
 }
 
-.repair-now .image3 {
+#banner .repair-now .image3 {
     grid-area: image3;
     height: 7rem;
     align-self: self-start;
@@ -120,30 +160,22 @@ main {
 }
 
 #solicita-ya {
-    height: 78vh;
     display: flex;
     flex-direction: column;
     place-items: center;
     justify-content: end;
-    gap: 30px;
+    gap: 22px;
     padding: 50px 0;
-}
-
-#solicita-ya .tittle {
-    font-weight: 100;
-    font-size: 55px;
-}
-
-#solicita-ya .description {
-    font-size: 32px;
 }
 
 #solicita-ya .pasos {
     width: 56.5%;
     display: grid;
     grid-template-areas: 'pasos1 pasos2 pasos3';
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 332px);
     grid-template-rows: auto;
+    place-items: center;
+    place-content: center;
     padding: 25px 0;
 }
 
@@ -176,61 +208,45 @@ main {
     height: 170px;
 }
 
-#solicita-ya .subtittle {
-    font-size: 50px;
-}
-
 #solicita-ya .text {
     display: flex;
     align-items: center;
-    font-size: 19px;
-    height: 6em;
-    text-align: center;
-    line-height: 1.4em;
+    font-weight: 600;
+}
+
+#solicita-ya .description {
+    font-size: 20px;
+    line-height: 28px;
+    height: 100%;
 }
 
 #tecnicos {
     display: flex;
     flex-direction: column;
     place-items: center;
-    background: url(../images/tecnicos.png);
+    background: url(../images/tecnicos.png) no-repeat padding-box;;
     height: 130vh;
     width: 100%;
     gap: 30px;
     padding-top: 21px;
 }
 
-#tecnicos .tittle {
-    font-size: 55px;
-    font-weight: 100;
-}
-
-#tecnicos .text {
-    font-size: 32px;
-    text-align: center;
-}
-
 #precios {
     display: grid;
     grid-template-areas: 'tittle tittle tittle' 'texto texto texto' 'tipo1 tipo2 tipo3' 'TyC TyC TyC';
-    grid-template-columns: repeat(3, 1fr );
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 25px;
     padding: 60px 0;
     width: 80%;
-    justify-self: center;
 }
 
 #precios .tittle {
     grid-area: tittle;
-    text-align: center;
-    font-size: 55px;
-    font-weight: 100;
 }
 
-#precios .texto {
+#precios .text {
     grid-area: texto;
-    text-align: center;
-    font-size: 32px;
+
 }
 
 #precios .tipo1 {
@@ -254,95 +270,95 @@ main {
     place-items: center;
 }
 
-#precios .subtittle {
-    font-size: 55px;
-    font-weight: bold;
-}
 
 #precios .image {
-    height: 225px;
+    height: 262px;
     margin: 25px 0;
 }
 
 #precios .precio {
-    font-size: 32px;
+    font-size: 57px;
+    line-height: 79px;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 #precios .TyC {
     grid-area: TyC;
     text-align: center;
-    font-size: 11px;
+    font-size: 15px;
+    line-height: 21px;
 }
 
 #dispositivos {
     display: grid;
-    grid-template-areas: 'tittle tittle tittle' 'texto texto texto' 'dispo1 dispo2 dispo3' 'TyC TyC TyC';
-    grid-template-columns: repeat(3, 1fr );
+    grid-template-areas: 'tittle tittle tittle' 'texto texto texto' 'image1 image2 image3' 'dispo1 dispo2 dispo3' 'TyC TyC TyC';
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 25px;
     padding: 60px 0;
-    width: 80%;
-    justify-self: center;
+    width: 90%;
 }
 
 #dispositivos .tittle {
     grid-area: tittle;
-    text-align: center;
-    font-size: 55px;
 }
 
 #dispositivos .text {
     grid-area: texto;
-    text-align: center;
-    font-size: 32px;
+}
+
+#dispositivos .image1 {
+    grid-area: image1;
+    align-self: center;
+    justify-self: center;
+    height: 572px;
+}
+
+#dispositivos .image2 {
+    grid-area: image2;
+    align-self: center;
+    justify-self: center;
+    height: 569px;
+}
+
+#dispositivos .image3 {
+    grid-area: image3;
+    align-self: center;
+    justify-self: center;
+    height: 464px;
 }
 
 #dispositivos .dispo1 {
     grid-area: dispo1;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    row-gap: 25px;
+    text-align: center;
+    font-size: 45px;
 }
 
 #dispositivos .dispo2 {
     grid-area: dispo2;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    row-gap: 25px;
+    text-align: center;
+    font-size: 45px;
 }
 
 #dispositivos .dispo3 {
     grid-area: dispo3;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    row-gap: 25px;
-}
-
-#dispositivos .image {
-    height: 400px;
-}
-
-#dispositivos .dispo {
+    text-align: center;
     font-size: 45px;
 }
 
 #dispositivos .TyC {
     grid-area: TyC;
     text-align: center;
-    font-size: 11px;
+    font-size: 15px;
+    line-height: 21px;
 }
 
 #Col {
     display: grid;
     grid-template-areas: 'tittle tittle' 'image1 image2' 'texto texto';
-    background: url(../images/Campesinos.png) no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 100vh;
+    background: transparent url(../images/Campesinos.png) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    width: 100vw;
+    height: 1074px;
     place-items: center;
     place-content: center;
     gap: 55px 30px;
@@ -350,9 +366,6 @@ main {
 
 #Col .tittle {
     grid-area: tittle;
-    text-align: center;
-    font-size: 55px;
-    font-weight: 100;
 }
 
 #Col .amarillo {
@@ -381,8 +394,53 @@ main {
 
 #Col .text {
     grid-area: texto;
-    text-align: center;
-    font-size: 32px;
     width: 70%;
 }
 
+footer {
+    height: calc(12rem - 6px);
+    background-color: #0050f5;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+footer div {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+@media (max-width: 1450px) {
+    #banner {
+        grid-template-columns: 1fr;
+    }
+
+    #banner .repair-now .image1 {
+        justify-self: center;
+    }
+
+    #banner .repair-now .text1 {
+        text-align: center;
+    }
+
+    #banner .image4 {
+        position: relative;
+        display: none;
+    }
+
+    .globe {
+        filter: contrast(0) brightness(0);
+    }
+}
