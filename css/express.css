@@ -18,6 +18,7 @@
     font-family:"MyriadPro";
 }
 html,body{
+    background-color: #fff;
     height: 100%;
     width: 100%;
 }
@@ -217,6 +218,7 @@ button{
         grid-column: 1/2;
     }
     body{
+        background-color: #fff;
         overflow-y:scroll;
         text-align: center;
     }
