@@ -5,16 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/popUp.css">
+    <link rel="stylesheet" href="css/Home.css">
     <title>Document</title>
 </head>
 
 <body id="cuerpo">
-    <header>
+    <div id="modal1" class="modalmask">
+        <div class="modalbox movedown">
+            <a href="index.html"> <svg class="icon icon-exit" title="Close">
+                    <use xlink:href="#icon-exit">
+                        <symbol id="icon-exit" viewBox="0 0 32 32">
+                            <path d="M24 20v-4h-10v-4h10v-4l6 6zM22 18v8h-10v6l-12-6v-26h22v10h-2v-8h-16l8 4v18h8v-6z">
+                            </path>
+                        </symbol>
+                    </use>
+                </svg>
+            </a>
+            <div id="ID">
+                <img src="./images/Logo.png" alt="Repair Express" id="repair">
+                <p>Por favor ingresa tu Repair Express ID</p>
+            </div>
+            <div id="inputs">
+                <p id="pedido">Repair Express ID</p>
+                <input type="text" value="">
+            </div>
+            <div id="inputs">
+                <p id="pedido">Contraseña</p>
+                <input type="text" value="">
+            </div>
+            <div id="botones">
+                <a href="reservar.html"><button id="ingreso">Ingresar</button></a>
+                <a href="#modal2"><button id="registro">Registrarse</button></a>
+            </div>
+            <hr>
+            <div id="redes">
+                <p>Tambien puedes utilizar</p>
+                <div id="iconos-log">
+                    <a href="https://g.co/kgs/eMvAjX" id="icono-log"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAr5JREFUWEft10/IT2kUB/DPa4gaU5Q0ZZZK2ZiSP41ioiZC/iQ1NphhI4PVJEnJQjbKGCxmMVlQZhYUsUCN5G9kM00pZjGF0Awas2Fm6NT91e+9nvt77vO+7+JdOPXr1u+ec77fc87znHNun2EmfcOMj/eEchUZTIbGYhY+wcd4jYe4j1t4kwNPvS8lFPprsA7zMKoB9DFO4CDulRArIfQZDmNaAUBk6WdsQZDMSltC6/EDPsh6TCs8wkpcz9m3IbQbu3KOMu9fYQnO5/zkCMV5OZZzknn/Dxbhchs/vQjNxUWMbHB0CcfxG37Fc0zE19hU3b6/8UWbUnUwmgiNwF1MTpCJ6/0tDvS42hHEDpzGnTaZyRH6soq+7uu/qvfcLgEp0W3K0AUsSDiKqPeWAJTqpgiNxgvEs1siKzPxfylIiX6K0AzcTDiJ7ny0wfkYbC8BrlrAlbpNitAynEo4n40bDaDj8KyQ0JHqNvYzSxH6Bt8lnH+Elw2g4/FXIaEIekWbDG2uhmJdd1I1zVO4AyF0shon2QytriZ1HXgxzg5hhlqXLDp0dOG6xKHd10AodqMzPUoWm0J9VYn5uKdNyeKsxAGtT/Y/MBUxm0pkAp4mDJamgmhqjFGaGIh1+RFflbCpsrCzZhPTPwKPZ/YMhcJCnGsAjkN/qCWpCCrmWT3bEXCcyXek17SPphW1T0mAbMCTHsS2Yj9iUNcl/F4rJTQFMS4+bAD9s7qNvyB+0a0/rcbL/B7BJK97ByO3oK2qduKWFcqqxeGOnTxW2qTkCIVRXM9YYwcr/yJaSrJUbTPU0duIaGQDXfIjM8txNRdVmwx1fMypblfJZ1DYxmfQth5jpx/HEkJh2PlQXIvPe3woPsBP+B6/57LS/b6UULdtjIvpFcnu/2O5K9qjh4pQSeCtdQeTodYgJYrvCeWy9RabY28lHJpEQAAAAABJRU5ErkJggg==" />
+                    </a>
+                    <a href="https://es-la.facebook.com/" id="icono-log"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAsFJREFUWEftl0uojVEUx383ySPvKOWdxESUIsIAA+mWmCBJKaVwXRGRd4TI2+RSJt5FUlLCRIiYcEsMKKS8Bgh5Rf/a5/bZ9vM7N91k1anTt9de67fX3nuttWtoYVLTwnj4Z4DGArOAUUAP81OwXwOvgFvAMeBm7g7kRKgtsACoB/olOnoM7AYOAV9S5qQCzQO2A91TjDp0FLWlwPHY/BQggayIGUocXwtsDumGgDR2BJib6CxVbR+wxKccAtoPLEr1YvQ+A7fN/9ZAG2A40MqysxHY4LLtA9J+78qAeQqsA84B76x5s4GjDltzXN9dQF0AOeiYCPQEGA289OhPA846xp4DA4GvxTEX0CZAhy9VJgFXAsrTgTOecR2JgyEg7fsboFMijVbZx6GrMzPM2BkHaJEuUZ5SlJrEjtBk4GIijNTOA1Mt/UEmYi5Ql2mB36sM2EANwPwMoNPADEtf13pxho31xQjaQHeAERnGTgEzLf0Tjm8hkxeAWl+EngG9qwQ66YhayGQjMNQH9AlolwEk56r6RckFeg909gF9BNoHgB4BgzOApXoAWBiYI58dfEBKcv2bGegyMDFg87erbx/qGybr+uY/BIZkRki5qldgzjVgvC9CO4FlzRghbcWHyAK2Aat8QBMiZaBYzWXjqiMLq8jKjkQXZGQESO3wdR+QSocKa8/EbXHloZxbpjQzAPjhA9L31cCWvwSkNmdP0Ve17Uc1EXoL9AWU+5rE16CpYKrZiklZoJ+ACvkl20Gohd0L1EWIygKpHVFR/UNiTf5hQE8gn5QB2mrOqdNmyjNIq1kDzmd3DtB38zZTKfFKCpAmjzGPPPvFmgr0wHQA92OHMhVIdpTk1HitBLoZwzGgFyaF6Cn9LQaj8Rygij21ClNMz6yru8NytBzoCtwF1HwlvekrNsoApSy0tM5/oFjofgGBN4IlXRXfPQAAAABJRU5ErkJggg==" />
+                    </a>
+                    <a href="https://www.apple.com/co/" id="icono-log"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjNJREFUWEft10uoT1EUx/HP9RhI8og8UkgShQGJmUchZcKAgUIpRsoj5WIiJQNFBiLFDEmRwoCBFInyNsPEKwbIwDNp6dw6Xfeefc5x9L/Fnu7fXut71l5nrbXb9LDV1sN4/DNAE7EFCzCmyi38jQhtxh70xVOMbyXQbmzPAezHxlYBTcftnPPPWXRetgroDJbmnK/DkSowoW0yh95jID5iJw5UhakD1BtjMQT38DXn9AKu4Cg+ZJrJeIsn+F4GsGyEhmEb1mJAZvgLAuIUzqI/VmERpmJEp3w6l9l4VgRWBiiMX8LIMl+Y0ETkluBad7oU0Gg8zHKjAZ5fJl5gAj51ZTAFdBnzmyLBHSzG6zoRmoa7DcK8y3Lred0cOoT1DQJFO2lP2Su6sluYkTJQYX8Wbqb0RUBxz8NTBirsj8KrlL4I6EfDlfyPgaLCDk19UYX9Obia0hdF6BGi9De1DmJDylgR0AmsSBmosB+9bGZWi7o9VgS0GscqOCwjfYO5eFynMMYfFn9FqpqXAclrYjyJWSlu4LeVcnYSy6t6LKF/kFXtykCzcb2Eg6qSNTheJ0JxJkaPhVU9Fuij24/Dt7pAU3C/QaDo9hfrJHX+zF5sbQDqcKphp5K6g6EPzmfjaV2uG5iHeB7VqkOdD/XCJuxCv9xmzEyns9lpEpYhfoaOFT1xH3Z0ehR0CVU2QvnDg7ASg7OodTXExds+wOIhEKUjErnUqgNUynBd0X+gVOR6XIR+ApY7WCWxATdrAAAAAElFTkSuQmCC" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal2" class="modalmask">
+        <div class="modalboxR movedown">
+            <a href="index.html" id="icono-log"> <svg class="icon2 icon-exit" title="Close">
+                    <use xlink:href="#icon-exit">
+                        <symbol id="icon-exit" viewBox="0 0 32 32">
+                            <path d="M24 20v-4h-10v-4h10v-4l6 6zM22 18v8h-10v6l-12-6v-26h22v10h-2v-8h-16l8 4v18h8v-6z">
+                            </path>
+                        </symbol>
+                    </use>
+                </svg></a>
+            <div id="ID2">
+                <img src="./images/Logo.png" alt="Repair Express" id="repair2">
+                <p>Por favor ingresa los siguientes datos personales</p>
+            </div>
+            <div id="inputs">
+                <p id="pedido">Correo Electrónico(Este será tu Repair Express ID)</p>
+                <input type="text" value="">
+            </div>
+            <div id="inputs">
+                <p id="pedido">Contraseña</p>
+                <input type="password" value="">
+            </div>
+            <div id="inputs">
+                <p id="pedido">Repetir Contraseña</p>
+                <input type="password" value="">
+            </div>
+            <div id="inputs">
+                <p id="pedido">Fecha de Nacimiento</p>
+                <input type="text" value="" style="text-indent: 60px;">
+                <img src="../images/Icon awesome-calendar-alt.png" alt="calendario" id="calendario">
+            </div>
+            <div id="inputs">
+                <p id="pedido">Direccion</p>
+                <input type="text" value="">
+            </div>
+            <div id="botones">
+                <a href="express.html"><button id="registro">Registrarse</button></a>
+            </div>
+        </div>
+    </div>
+    <header id="header">
         <section id="banner">
             <div class="repair-now">
                 <img src="images/Logo.png" alt="Logo Reapir express" class="image1">
@@ -22,8 +105,8 @@
                     encargaremos
                     de repararlo.</p>
                 <p class="text2 text">Solicita ya tu reparación a domicilio por técnicos especializados</p>
-                <a href="reparar.html" class="button1"><button>Reparar ya</button></a>
-                <a href="#pop-up" class="button2"><button>Revisar Servicio</button></a>
+                <a href="reservar.html" class="button1"><button>Reparar ya</button></a>
+                <a href="#modal1" class="button2"><button>Revisar Servicio</button></a>
                 <img src="images/warranty.png" alt="1-year-warranty" class="image2">
                 <img src="images/hours.png" alt="48-72-hours" class="image3">
             </div>
@@ -31,7 +114,7 @@
         </section>
         <img src="images/Globe.png" class="globe">
     </header>
-    <main>
+    <main id="main">
         <section id="solicita-ya">
             <h2 class="tittle">Es tan fácil como contar del 1 al 3</h2>
             <p class="text">Nuestro servicio solamente tiene 3 pasos a seguir para obtenerlo</p>
@@ -54,12 +137,14 @@
                 <div class="pasos3">
                     <img src="images/Icon metro-tools.png" alt="" class="image">
                     <p class="subtittle">Reparar</p>
-                    <p class="text description">Se procede a reparar el dispositivo con técnicos especializados con <br>
+                    <p class="text description">Se procede a reparar el dispositivo con técnicos especializados con
+                        <br>
                         los mejores
-                        estándares de calidad que <br> se puedan encontrar en el mercado</p>
+                        estándares de calidad que <br> se puedan encontrar en el mercado
+                    </p>
                 </div>
             </div>
-            <a href="reparar.html" class="button"><button>Solicítala ya</button></a>
+            <a href="reservar.html" class="button"><button>Solicítala ya</button></a>
 
         </section>
         <section id="tecnicos">
@@ -89,7 +174,8 @@
                 <p class="text">Desde</p>
                 <strong class="precio">$80000 COP*</strong>
             </div>
-            <small class="TyC">"Revisar precios de acuerdo al modelo a reparar Sujeto a cambios y disponibilidad</small>
+            <small class="TyC">"Revisar precios de acuerdo al modelo a reparar Sujeto a cambios y
+                disponibilidad</small>
         </section>
         <section id="dispositivos">
             <h2 class="tittle">Dispositivos</h2>

@@ -1,0 +1,219 @@
+/* /Efecto/ */
+.modalmask {
+    position: fixed;
+    font-family: "MyriadPro";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    font-family:"MyriadPro";
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+
+/* /Movimientos/ */
+.movedown {
+    margin: 0 auto;
+}
+
+.modalmask:target .movedown{       
+    margin: 2.5% auto;
+}
+
+
+/* /Boton de cerrar/ */
+.icon {
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    right: 50px;
+    top: 50px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+    display: inline-block;
+    width: 2.3em;
+    height: 2.3em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+#icono-log{
+    color: black;
+    background-color: white !important;
+    width: 15%;
+}
+.icon:hover {
+    fill: #0050f5;
+}
+
+
+/* /Formato de la ventana de inicio de sesion/ */
+.modalbox{
+    width: 811px;
+    height: 798px;
+    position: relative;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #707070;
+    border-radius:59px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#ID{
+    font-size:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 0.5rem; */
+}
+#ID > p{
+    margin: auto;
+}
+#repair{
+    width: 40%;
+}
+#inputs{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 20px; */
+    font-size: 20px;
+}
+#pedido{
+    align-self:flex-start;
+}
+input{
+    height: 69px;
+    border: 1px solid #707070;
+    border-radius: 35px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 30px;
+    text-indent: 10px;
+}
+#botones{
+    display: flex;
+    gap: 1.5rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+}
+#ingreso, #registro{
+    border: none;
+    border-radius: 50px !important;
+    background-color: #0050f5;
+    color: white;
+    height: 62px !important;
+    width: 176px !important;
+    font-size: 25px !important;
+    line-height: 43px;
+    cursor: pointer;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+hr{
+    background-color:#707070;
+    width: 80%;
+    margin: 0;
+}
+#redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-size: 20px;
+}
+#iconos-log{
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+}
+#icono-out{
+    height: 0;
+    width: 0;
+    background: #fff;
+}
+
+/* Formato de la ventana de registro */
+.modalboxR{
+    width: 811px;
+    height: 858px;
+    position: relative;
+    padding: 1.5rem;
+    border: 1px solid #707070;
+    background: #fff;
+    border-radius:59px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+#ID2{
+    font-size:24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+#ID2 > p{
+    margin: auto;
+    font-size: 30px;
+}
+
+#repair2{
+    width: 30%;
+}
+
+.icon2{
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    right: 50px;
+    top: 50px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+    display: inline-block;
+    width: 2.3em;
+    height: 2.3em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+#icono-log{
+    color: black;
+    background-color: white !important;
+    width: 15%;
+}
+
+#calendario{
+    position: absolute;
+    bottom: 252px;
+    right: 700px;
+}

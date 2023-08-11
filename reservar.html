@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reservar.css">
+    <title>Reserva</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor0">
+            <nav class="menu">
+                <a href="index.html">Menú Principal</a>
+                <img class="imagen1" src="images/Logo.png" alt="">
+                <a href="express.html">Repair Express ID</a>
+            </nav>
+            <div class="profile">
+                <img src="images/Imagen 3.png" alt="Foto de Usuario">
+            </div>
+            <div class="separador"></div>
+        </div>
+
+    </header>
+    <main class="contenedor1">
+        <div class="gridsolo">
+            <img src="images/Icon awesome-calendar-check-1.png" alt="">
+            <p class="grande">Reservar</p>
+            <p>Por favor llena los datos siguientes</p>
+        </div>
+        <div class="grids">
+            <div class="gridc">
+                <p class="pre">¿Qué dispositivo tienes?</p>
+                <div class="container">
+                    <div class="carousel">
+                        <p class="letras"><img class="imagenca" src="images/refurb-macbook-air-gold-202002.png"
+                                alt=""><br>Mac</p>
+                        <div class="letras2">
+                            <p class="letras"><img class="imagencaruc" src="images/510px-IPhone_X_vector.svg.png"
+                                    alt=""><br>iphone</p>
+                        </div>
+                        <p class="letras"><img class="imagencar" src="images/520px-IPad_2017_tablet.png" alt=""><br>ipad
+                        </p>
+                        <div class="flechaleft">
+                            <box-icon name='left-arrow-alt'></box-icon>
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAlRJREFUeF7t2j1PFFEUxvE/ET+alTEEKbCRyo7KFntt7eikUQshgZCQUPgF/EoG0RzCmHGDM2fnnDtzL/tsPXt37u8+5+y83C30GRTYks+wgIBGEiIgAcWaiBKkBClBMQElKOanHqQEKUExASUo5qcepAQpQTGBBhJkZX4C/ACOi852wuBL9yD7/a/Aq/tzfwt8nDCPYl9ZEmgVp5vkB+Co2IzXHHgpoP/hdKdvpXYI/F5zPumHLwE0hmOT/AK83kSgJ8DnXs95aMUN5wC4TY/DhAHnTJDhnAK7A+dZFY6d51xATeLMBeTBOQP2aymrfsJLJ8iLY9dBvya0iOJfKQm0DXwb6TmWnGpxSpaY4VwAzweWuHqcUkAenEvgZa1lVbIHeXH2gJviDSThBzJ70KPDySyxp8D5SM+xsmomOV34MhJkOFfAs4FEXwMvWimrzB7kwUnoBJOGyFj80K1GzThp7WOqcu04AnIU3dTF/2foyCC1pygyt79I0UFqRorO7Q4pYxAPkv3N7wA/HaVR1SEZQDYhz4Vik0hZQIbkudVo7oIxE8iL1NQtRzbQo0MqAbQOUvXPhEoBeZGqf6pYEqhDavq5dGkgQ/K+2djI1z7dRZ8Hqbq3qllX0t4r3yaR5iixPqAXqYqdHXMnqF9uYzs8PgFvNnH7S/9ZeH/r3WqZbvQGqjGk98A7b2MrfdzcPWh1PtrE6VhhQ7K/+O+A9Z6qPksnqCqMh05GQCNLJCABxapYCVKClKCYgBIU81MPUoKUoJiAEhTzUw9SgpSgmIASFPP7A28hZkm6PnCyAAAAAElFTkSuQmCC" />
+                        </div>
+                        <div class="flecharight">
+                            <box-icon name='right-arrow-alt'></box-icon>
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAglJREFUeF7t2j0vBFEUxvH/Ir6SryCRCAkKFOh0WnpalU5FQ4GIqHw0hJxkp9mYF3Nn9j6XZ+uZ7Oxvn3Pmzpk7wZ9GgYl9mgUM1JIQAxkorYk4QU6QE5Qm4ASl+bkHOUFOUJqAE5Tm5x7kBDlBaQKFJugYWAEOga9RBQoEOgPOp9d9AxzkRFJr0pfAycyfegfs5kJSAYrruAaOahKfDUkJ6BbYa2gJWZBUgMJlAYieI4WkBCSJpAZUId0DWy3ltg98jr0EUASK37wIRM9pQnoCtsdGUgWSQVIGqpAegfWGUho1SepA4bIEPORCKgHoN0g7wMeQjbsUoK5Ir8DGkEglAVVIL8BqQ0oGRSoNKFyWged5IZUINFekIYGyDrZqSi653P46ULgF0ibw3ufu9h+AwuUNWOuDZKA5zqQVe1BSeuLkv56g3qVVBWtIoD49sO85XddCvZtzyUBdcQZ55CgtQfFk70eNmrrrMvZIXhjOfncpCcqCM/RdrG/DbTuvC05MFQefBZUAFMN7j1xrIiTxZkO1B0ngqJaYDI4iULyfl3mrqgbkzQsN93NJHKUExc3iCoi9iT99suwNUgKqULwFr23ZDJwCF9PjvImzBszbgDskSeIQ1ZW0BI5ik5aBKXnkOldEl1gLt4EMlFaRTpAT5ASlCThBaX7uQU6QE5Qm4ASl+bkHtfh9AyPhdkldFYzSAAAAAElFTkSuQmCC" />
+                        </div>
+                    </div>
+                    <br>
+                    <form action="#" method="post">
+                        <label for="modelo" class="cambiol">¿Qué modelo tienes?</label>
+                        <div class="text-box">
+                            <input type="text" id="modelo" name="modelo" required>
+                            <div class="placeholder">iphone X</div>
+                            <div class="flecha">
+                                <box-icon name='down-arrow-alt'></box-icon>
+                                <img class="fle"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAYAAACPZlfNAAAAAXNSR0IArs4c6QAABKVJREFUeF7tnMmK1UAYhU+vHBAn9BkURXBABecRRfFFXOlO3ThsdKcrfRNRFGdFcUAQUZ9BURRxwI38UIHbl9x7q/4kVTnhZNtVqZPz1am/Up3uOeiicmCOSq3EQsDIJoGACRiZA2RylTABI3OATK4SJmBkDpDJVcIEjMwBMrlKmICROUAmVwkTMDIHyOQqYQJG5gCZXCVMwMgcIJOrhAkYmQNkcpUwASNzgEyuEiZgZA6QyVXCBIzMATK5Q0nYBQDnZ3h/EYC1o74EjAyfgAlYEQe0JBax3T+ogPm9K9JTwIrY7h9UwPzeFekpYEVs9w8qYH7vivQUsCK2+wcVML93RXoKWBHb/YMKmN+7Ij0FrIjt/kEFzO9dkZ4CVsR2/6AC5veuSE8BK2K7f1AB83tXpKeAFbHdP6iA+b0r0lPAitjuH1TA/N5F91wB4Ft06+kNcwNrU3uSBaW+mroOYD+APQA+Jymub5wT2GoAjwDcAnC6Be1JtygB7CqAU0Hlx5ag5QJWwVob9F/LDS03sMsAzoxNKYO2E8DXpKk2v3EOYCsBPAVQwaoUXIr46rjBo83vmhOYfUo96VPpdwD2NYDWNTCD9QDAhgnOnwVwpTUqU26UC5ilytI17WoCrUtgs2BVz2T1zJbITq8cwKxeWd2KuQzabgDfYxqPtOkKWCysSspJADcStSc1zwHsQ826P03kawAHE6F1AWwZgPsANiU4as+6LqF9ctMcwFYBeAJgTYK6NwAOJEBrG5jBugdgc4LmTwB2AfiS0Ce5aQ5gJsoLbS+AnxFP1Saw3sIyH3IB80J7AeBQBLS2gC0B8LCPyaombU5gXUJrA5jBugtge0Siqybvw+tIp8vgqJ7cwCpo9k6zPsEYS5rVtF8T+jQF5oVlO9q2zkOj7CgBzITZ4enjRGi2cTkyAVoTYDSwctew8RnUJjQvsMVhN5i6DGZPVqka1hU0DzCDdTtsxaOWIwBWs4rBKp2wyiRv0g4D+BNukgrMA+ttqKNZa9b4TCpVw+qSZi+qG2OneljKjgdoKcC8sOyd8EeCvk6a9gWYPdzS8A7kgWaHyzH/WMVO1O8kLoOWrF7A6suSODoTvdCeAzg3Y0obrG1hWYud/b2C1Udgpml5eIHdEutqWBYXJrSPafoqnLKk/uYg5t7uNn1aEpsmzW1CTceXAVbxmtXXTUed2bY82lHR1jZJRNzLYNmpSsyhc8Tt2m3S14RVT2mnELZ7zAWt17D6WsPGp2QuaL2HxQLMdHYNjQIWE7AuoT0Lh8q9rFlMm466at120gyW/YL0d7tbg+7u1vdNxyRodmi7o6EtdLDYlsRRPovClt8LjRIWMzDT7oVGC4sdmAeafZpwjKlmsW866spWbNIM1lEAfxvWvqLdGTcdk6DdDF8w1f18ELCGsCSOwlkQ/sjO/gpm9BoMrKEBs+cZhzYoWEMENgrtH4AT7DVriJuOSTWN5vQiZRczlE1HyjNTtxUwMnwCJmBkDpDJVcIEjMwBMrlKmICROUAmVwkTMDIHyOQqYQJG5gCZXCVMwMgcIJOrhAkYmQNkcpUwASNzgEyuEiZgZA6Qyf0PrQz0beWxIWUAAAAASUVORK5CYII=" />
+                            </div>
+                        </div>
+
+                        <label for="numero-serial" class="cambiol">Ingresa el número de serial</label>
+                        <div class="text-box">
+                            <input type="text" id="numero-serial" name="numero-serial" required>
+                            <div class="placeholder2">F2MTT6FGHCL8</div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="gridc">
+                <p class="pre">¿Qué Servicio Deseas?</p>
+                <div class="container">
+                    <div class="carousel">
+
+                        <p class="letras"><img class="imagencar" src="images/Icon ionic-md-battery-full.png"
+                                alt="Imagen 2"><br>Bateria</p>
+                        <div class="letras2">
+                            <p class="letras"><img class="imagencaru"
+                                    src="images/llamada-de-telefono-inteligente (2).png" alt="Imagen 1"><br>Pantalla</p>
+                        </div>
+                        <p class="letras"><img class="imagenca" src="images/Icon simple-ifixit.png"
+                                alt="Imagen 3"><br>Sofware</p>
+                        <div class="flechaleft2">
+                            <box-icon name='left-arrow-alt'></box-icon>
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAlRJREFUeF7t2j1PFFEUxvE/ET+alTEEKbCRyo7KFntt7eikUQshgZCQUPgF/EoG0RzCmHGDM2fnnDtzL/tsPXt37u8+5+y83C30GRTYks+wgIBGEiIgAcWaiBKkBClBMQElKOanHqQEKUExASUo5qcepAQpQTGBBhJkZX4C/ACOi852wuBL9yD7/a/Aq/tzfwt8nDCPYl9ZEmgVp5vkB+Co2IzXHHgpoP/hdKdvpXYI/F5zPumHLwE0hmOT/AK83kSgJ8DnXs95aMUN5wC4TY/DhAHnTJDhnAK7A+dZFY6d51xATeLMBeTBOQP2aymrfsJLJ8iLY9dBvya0iOJfKQm0DXwb6TmWnGpxSpaY4VwAzweWuHqcUkAenEvgZa1lVbIHeXH2gJviDSThBzJ70KPDySyxp8D5SM+xsmomOV34MhJkOFfAs4FEXwMvWimrzB7kwUnoBJOGyFj80K1GzThp7WOqcu04AnIU3dTF/2foyCC1pygyt79I0UFqRorO7Q4pYxAPkv3N7wA/HaVR1SEZQDYhz4Vik0hZQIbkudVo7oIxE8iL1NQtRzbQo0MqAbQOUvXPhEoBeZGqf6pYEqhDavq5dGkgQ/K+2djI1z7dRZ8Hqbq3qllX0t4r3yaR5iixPqAXqYqdHXMnqF9uYzs8PgFvNnH7S/9ZeH/r3WqZbvQGqjGk98A7b2MrfdzcPWh1PtrE6VhhQ7K/+O+A9Z6qPksnqCqMh05GQCNLJCABxapYCVKClKCYgBIU81MPUoKUoJiAEhTzUw9SgpSgmIASFPP7A28hZkm6PnCyAAAAAElFTkSuQmCC" />
+                        </div>
+                        <div class="flecharight2">
+                            <box-icon name='right-arrow-alt'></box-icon>
+                            <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAglJREFUeF7t2j0vBFEUxvH/Ir6SryCRCAkKFOh0WnpalU5FQ4GIqHw0hJxkp9mYF3Nn9j6XZ+uZ7Oxvn3Pmzpk7wZ9GgYl9mgUM1JIQAxkorYk4QU6QE5Qm4ASl+bkHOUFOUJqAE5Tm5x7kBDlBaQKFJugYWAEOga9RBQoEOgPOp9d9AxzkRFJr0pfAycyfegfs5kJSAYrruAaOahKfDUkJ6BbYa2gJWZBUgMJlAYieI4WkBCSJpAZUId0DWy3ltg98jr0EUASK37wIRM9pQnoCtsdGUgWSQVIGqpAegfWGUho1SepA4bIEPORCKgHoN0g7wMeQjbsUoK5Ir8DGkEglAVVIL8BqQ0oGRSoNKFyWged5IZUINFekIYGyDrZqSi653P46ULgF0ibw3ufu9h+AwuUNWOuDZKA5zqQVe1BSeuLkv56g3qVVBWtIoD49sO85XddCvZtzyUBdcQZ55CgtQfFk70eNmrrrMvZIXhjOfncpCcqCM/RdrG/DbTuvC05MFQefBZUAFMN7j1xrIiTxZkO1B0ngqJaYDI4iULyfl3mrqgbkzQsN93NJHKUExc3iCoi9iT99suwNUgKqULwFr23ZDJwCF9PjvImzBszbgDskSeIQ1ZW0BI5ik5aBKXnkOldEl1gLt4EMlFaRTpAT5ASlCThBaX7uQU6QE5Qm4ASl+bkHtfh9AyPhdkldFYzSAAAAAElFTkSuQmCC" />
+                        </div>
+
+                    </div>
+                    <br>
+                    <form action="#" method="post">
+                        <label for="modelo" class="cambiol">Dirección</label>
+                        <div class="text-box">
+                            <input type="text" id="modelo" name="modelo" required>
+                            <div class="flecha">
+                                <box-icon name='down-arrow-alt'></box-icon>
+                                <img class="fle"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAYAAACPZlfNAAAAAXNSR0IArs4c6QAABKVJREFUeF7tnMmK1UAYhU+vHBAn9BkURXBABecRRfFFXOlO3ThsdKcrfRNRFGdFcUAQUZ9BURRxwI38UIHbl9x7q/4kVTnhZNtVqZPz1am/Up3uOeiicmCOSq3EQsDIJoGACRiZA2RylTABI3OATK4SJmBkDpDJVcIEjMwBMrlKmICROUAmVwkTMDIHyOQqYQJG5gCZXCVMwMgcIJOrhAkYmQNkcpUwASNzgEyuEiZgZA6QyVXCBIzMATK5Q0nYBQDnZ3h/EYC1o74EjAyfgAlYEQe0JBax3T+ogPm9K9JTwIrY7h9UwPzeFekpYEVs9w8qYH7vivQUsCK2+wcVML93RXoKWBHb/YMKmN+7Ij0FrIjt/kEFzO9dkZ4CVsR2/6AC5veuSE8BK2K7f1AB83tXpKeAFbHdP6iA+b0r0lPAitjuH1TA/N5F91wB4Ft06+kNcwNrU3uSBaW+mroOYD+APQA+Jymub5wT2GoAjwDcAnC6Be1JtygB7CqAU0Hlx5ag5QJWwVob9F/LDS03sMsAzoxNKYO2E8DXpKk2v3EOYCsBPAVQwaoUXIr46rjBo83vmhOYfUo96VPpdwD2NYDWNTCD9QDAhgnOnwVwpTUqU26UC5ilytI17WoCrUtgs2BVz2T1zJbITq8cwKxeWd2KuQzabgDfYxqPtOkKWCysSspJADcStSc1zwHsQ826P03kawAHE6F1AWwZgPsANiU4as+6LqF9ctMcwFYBeAJgTYK6NwAOJEBrG5jBugdgc4LmTwB2AfiS0Ce5aQ5gJsoLbS+AnxFP1Saw3sIyH3IB80J7AeBQBLS2gC0B8LCPyaombU5gXUJrA5jBugtge0Siqybvw+tIp8vgqJ7cwCpo9k6zPsEYS5rVtF8T+jQF5oVlO9q2zkOj7CgBzITZ4enjRGi2cTkyAVoTYDSwctew8RnUJjQvsMVhN5i6DGZPVqka1hU0DzCDdTtsxaOWIwBWs4rBKp2wyiRv0g4D+BNukgrMA+ttqKNZa9b4TCpVw+qSZi+qG2OneljKjgdoKcC8sOyd8EeCvk6a9gWYPdzS8A7kgWaHyzH/WMVO1O8kLoOWrF7A6suSODoTvdCeAzg3Y0obrG1hWYud/b2C1Udgpml5eIHdEutqWBYXJrSPafoqnLKk/uYg5t7uNn1aEpsmzW1CTceXAVbxmtXXTUed2bY82lHR1jZJRNzLYNmpSsyhc8Tt2m3S14RVT2mnELZ7zAWt17D6WsPGp2QuaL2HxQLMdHYNjQIWE7AuoT0Lh8q9rFlMm466at120gyW/YL0d7tbg+7u1vdNxyRodmi7o6EtdLDYlsRRPovClt8LjRIWMzDT7oVGC4sdmAeafZpwjKlmsW866spWbNIM1lEAfxvWvqLdGTcdk6DdDF8w1f18ELCGsCSOwlkQ/sjO/gpm9BoMrKEBs+cZhzYoWEMENgrtH4AT7DVriJuOSTWN5vQiZRczlE1HyjNTtxUwMnwCJmBkDpDJVcIEjMwBMrlKmICROUAmVwkTMDIHyOQqYQJG5gCZXCVMwMgcIJOrhAkYmQNkcpUwASNzgEyuEiZgZA6Qyf0PrQz0beWxIWUAAAAASUVORK5CYII=" />
+                            </div>
+                        </div>
+
+                        <label for="fecha" class="cambiol">Fecha de reparación</label>
+                        <div class="text-box">
+                            <input type="text" id="modelo" name="modelo" required>
+                            <div class="calendario">
+                                <img class="calen" src="images/Icon awesome-calendar-alt.png" alt="">
+                            </div>
+                            <div class="flecha">
+                                <box-icon name='down-arrow-alt'></box-icon>
+                                <img class="fle"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAYAAACPZlfNAAAAAXNSR0IArs4c6QAABKVJREFUeF7tnMmK1UAYhU+vHBAn9BkURXBABecRRfFFXOlO3ThsdKcrfRNRFGdFcUAQUZ9BURRxwI38UIHbl9x7q/4kVTnhZNtVqZPz1am/Up3uOeiicmCOSq3EQsDIJoGACRiZA2RylTABI3OATK4SJmBkDpDJVcIEjMwBMrlKmICROUAmVwkTMDIHyOQqYQJG5gCZXCVMwMgcIJOrhAkYmQNkcpUwASNzgEyuEiZgZA6QyVXCBIzMATK5Q0nYBQDnZ3h/EYC1o74EjAyfgAlYEQe0JBax3T+ogPm9K9JTwIrY7h9UwPzeFekpYEVs9w8qYH7vivQUsCK2+wcVML93RXoKWBHb/YMKmN+7Ij0FrIjt/kEFzO9dkZ4CVsR2/6AC5veuSE8BK2K7f1AB83tXpKeAFbHdP6iA+b0r0lPAitjuH1TA/N5F91wB4Ft06+kNcwNrU3uSBaW+mroOYD+APQA+Jymub5wT2GoAjwDcAnC6Be1JtygB7CqAU0Hlx5ag5QJWwVob9F/LDS03sMsAzoxNKYO2E8DXpKk2v3EOYCsBPAVQwaoUXIr46rjBo83vmhOYfUo96VPpdwD2NYDWNTCD9QDAhgnOnwVwpTUqU26UC5ilytI17WoCrUtgs2BVz2T1zJbITq8cwKxeWd2KuQzabgDfYxqPtOkKWCysSspJADcStSc1zwHsQ826P03kawAHE6F1AWwZgPsANiU4as+6LqF9ctMcwFYBeAJgTYK6NwAOJEBrG5jBugdgc4LmTwB2AfiS0Ce5aQ5gJsoLbS+AnxFP1Saw3sIyH3IB80J7AeBQBLS2gC0B8LCPyaombU5gXUJrA5jBugtge0Siqybvw+tIp8vgqJ7cwCpo9k6zPsEYS5rVtF8T+jQF5oVlO9q2zkOj7CgBzITZ4enjRGi2cTkyAVoTYDSwctew8RnUJjQvsMVhN5i6DGZPVqka1hU0DzCDdTtsxaOWIwBWs4rBKp2wyiRv0g4D+BNukgrMA+ttqKNZa9b4TCpVw+qSZi+qG2OneljKjgdoKcC8sOyd8EeCvk6a9gWYPdzS8A7kgWaHyzH/WMVO1O8kLoOWrF7A6suSODoTvdCeAzg3Y0obrG1hWYud/b2C1Udgpml5eIHdEutqWBYXJrSPafoqnLKk/uYg5t7uNn1aEpsmzW1CTceXAVbxmtXXTUed2bY82lHR1jZJRNzLYNmpSsyhc8Tt2m3S14RVT2mnELZ7zAWt17D6WsPGp2QuaL2HxQLMdHYNjQIWE7AuoT0Lh8q9rFlMm466at120gyW/YL0d7tbg+7u1vdNxyRodmi7o6EtdLDYlsRRPovClt8LjRIWMzDT7oVGC4sdmAeafZpwjKlmsW866spWbNIM1lEAfxvWvqLdGTcdk6DdDF8w1f18ELCGsCSOwlkQ/sjO/gpm9BoMrKEBs+cZhzYoWEMENgrtH4AT7DVriJuOSTWN5vQiZRczlE1HyjNTtxUwMnwCJmBkDpDJVcIEjMwBMrlKmICROUAmVwkTMDIHyOQqYQJG5gCZXCVMwMgcIJOrhAkYmQNkcpUwASNzgEyuEiZgZA6Qyf0PrQz0beWxIWUAAAAASUVORK5CYII=" />
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="gridc">
+                <div class="contenedorbot">
+                    <a href="pagar.html" class="boton">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
