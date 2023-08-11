@@ -6,17 +6,18 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
-    font-family:"MyriadPro";
+    font-family: "MyriadPro";
 }
+
 .modalmask:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
 
@@ -26,7 +27,7 @@
     margin: 0 auto;
 }
 
-.modalmask:target .movedown{       
+.modalmask:target .movedown {
     margin: 2.5% auto;
 }
 
@@ -41,7 +42,7 @@
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    border-radius:3px;
+    border-radius: 3px;
     display: inline-block;
     width: 2.3em;
     height: 2.3em;
@@ -49,25 +50,27 @@
     stroke: currentColor;
     fill: currentColor;
 }
-#icono-log{
+
+#icono-log {
     color: black;
     background-color: white !important;
     width: 15%;
 }
+
 .icon:hover {
     fill: #0050f5;
 }
 
 
 /* /Formato de la ventana de inicio de sesion/ */
-.modalbox{
+.modalbox {
     width: 811px;
     height: 798px;
     position: relative;
     padding: 1.5rem;
     background: #fff;
     border: 1px solid #707070;
-    border-radius:59px;
+    border-radius: 59px;
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
@@ -78,20 +81,23 @@
     gap: 1.5rem;
 }
 
-#ID{
-    font-size:30px;
+#ID {
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* padding-bottom: 0.5rem; */
 }
-#ID > p{
+
+#ID>p {
     margin: auto;
 }
-#repair{
+
+#repair {
     width: 40%;
 }
-#inputs{
+
+#inputs {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -99,10 +105,12 @@
     /* padding-bottom: 20px; */
     font-size: 20px;
 }
-#pedido{
-    align-self:flex-start;
+
+#pedido {
+    align-self: flex-start;
 }
-input{
+
+input {
     height: 69px;
     border: 1px solid #707070;
     border-radius: 35px;
@@ -111,13 +119,16 @@ input{
     font-size: 30px;
     text-indent: 10px;
 }
-#botones{
+
+#botones {
     display: flex;
     gap: 1.5rem;
     /* padding-top: 1rem;
     padding-bottom: 1rem; */
 }
-#ingreso, #registro{
+
+#ingreso,
+#registro {
     border: none;
     border-radius: 50px !important;
     background-color: #0050f5;
@@ -130,39 +141,43 @@ input{
     font-weight: 300;
     letter-spacing: 1px;
 }
-hr{
-    background-color:#707070;
+
+hr {
+    background-color: #707070;
     width: 80%;
     margin: 0;
 }
-#redes{
+
+#redes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     font-size: 20px;
 }
-#iconos-log{
+
+#iconos-log {
     display: flex;
     gap: 1.3rem;
     justify-content: center;
     align-items: center;
 }
-#icono-out{
+
+#icono-out {
     height: 0;
     width: 0;
     background: #fff;
 }
 
 /* Formato de la ventana de registro */
-.modalboxR{
+.modalboxR {
     width: 811px;
     height: 858px;
     position: relative;
     padding: 1.5rem;
     border: 1px solid #707070;
     background: #fff;
-    border-radius:59px;
+    border-radius: 59px;
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
@@ -173,23 +188,24 @@ hr{
     gap: 1.3rem;
 }
 
-#ID2{
-    font-size:24px;
+#ID2 {
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 0.5rem;
 }
-#ID2 > p{
+
+#ID2>p {
     margin: auto;
     font-size: 30px;
 }
 
-#repair2{
+#repair2 {
     width: 30%;
 }
 
-.icon2{
+.icon2 {
     line-height: 25px;
     position: absolute;
     text-align: center;
@@ -198,7 +214,7 @@ hr{
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    border-radius:3px;
+    border-radius: 3px;
     display: inline-block;
     width: 2.3em;
     height: 2.3em;
@@ -206,13 +222,14 @@ hr{
     stroke: currentColor;
     fill: currentColor;
 }
-#icono-log{
+
+#icono-log {
     color: black;
     background-color: white !important;
     width: 15%;
 }
 
-#calendario{
+#calendario {
     position: absolute;
     bottom: 252px;
     right: 700px;

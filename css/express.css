@@ -2,28 +2,32 @@
     font-family: "MyriadPro-light";
     src: url(../fonts/myriad-pro-CL/MyriadPro-Light.otf) format("truetype");
 }
+
 @font-face {
     font-family: "MyriadPro";
     src: url(../fonts/myriad-pro-CL/MYRIADPRO-REGULAR.OTF) format("truetype");
 }
+
 @font-face {
     font-family: "MyriadPro-Bold";
     src: url(../fonts/myriad-pro-CL/MYRIADPRO-BOLD.OTF) format("truetype");
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"MyriadPro";
+    font-family: "MyriadPro";
 }
-html,body{
+
+html,
+body {
     background-color: #fff;
     height: 100%;
     width: 100%;
 }
 
-header{
+header {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -32,30 +36,34 @@ header{
     font-size: 30px;
     margin: 50px 0 10px 0;
 }
-#menu{
+
+#menu {
     font-size: 25px;
     color: black;
     text-decoration: none;
 }
-#repair{
+
+#repair {
     width: 10%;
 }
-hr{
+
+hr {
     width: 90%;
     margin: auto;
     height: 2px;
 }
 
-main{
+main {
     height: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 230px 70% ;
+    grid-template-rows: 230px 70%;
     padding: 0% 5%;
     gap: 1rem;
     place-items: center;
 }
-#pedro{
+
+#pedro {
     grid-column: 1/4;
     width: 100%;
     display: flex;
@@ -65,15 +73,18 @@ main{
     gap: 1rem;
     padding-right: 4rem;
 }
-#pedro > p{
+
+#pedro>p {
     font-size: 18px;
 }
-#bienvenido{
+
+#bienvenido {
     font-size: 34px !important;
     font-weight: 500;
 }
 
-#personal,#facturacion{
+#personal,
+#facturacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,19 +92,23 @@ main{
     gap: 1.3rem;
     text-align: center;
 }
-#cambiar{
+
+#cambiar {
     font-size: 27px;
     font-weight: 500;
 }
-#texto1{
+
+#texto1 {
     font-size: 18px;
 }
-#prueba{
+
+#prueba {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-#entrar{
+
+#entrar {
     height: 72px;
     width: 246px;
     border: none;
@@ -103,29 +118,33 @@ main{
     border-radius: 50px;
 }
 
-#actual{
+#actual {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem; 
+    gap: 0.8rem;
 }
-#servicio{
+
+#servicio {
     font-size: 34px;
 }
 
-#google{
+#google {
     width: 100%;
 }
-#status-g{
+
+#status-g {
     display: flex;
     font-size: 15px;
-    gap:3.5rem;
+    gap: 3.5rem;
     font-family: "MyriadPro-light";
 }
-#status20{
+
+#status20 {
     font-size: 20px !important;
 }
-#reportar{
+
+#reportar {
     border: none;
     background-color: red;
     color: white;
@@ -133,37 +152,45 @@ main{
     width: 93px;
     border-radius: 20px;
 }
-#celular{
+
+#celular {
     display: flex;
     gap: 1.5rem;
 }
-#cambio{
+
+#cambio {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#cambiar2{
+
+#cambiar2 {
     font-size: 20px;
 }
-#cambiar1,#tecnico{
+
+#cambiar1,
+#tecnico {
     font-family: "MyriadPro-Bold";
     font-size: 20px;
 }
 
-#info-andres{
+#info-andres {
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: center;
 }
-#usuario{
+
+#usuario {
     width: 14%;
 }
-#tecnico{
+
+#tecnico {
     width: 100%;
     text-align: center;
     padding-right: 12rem;
 }
+
 .icon {
     display: inline-block;
     width: 1.9em;
@@ -172,17 +199,20 @@ main{
     stroke: currentColor;
     fill: currentColor;
 }
-#iconos{
+
+#iconos {
     display: flex;
     gap: 1rem;
 }
-#boton-bajo{
+
+#boton-bajo {
     display: flex;
     justify-content: end;
     align-self: flex-end;
     padding: 0 20px 20px 20px;
 }
-#baja{
+
+#baja {
     width: 129px;
     height: 38px;
     border: none;
@@ -191,38 +221,47 @@ main{
     border-radius: 40px;
     font-size: 15px;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
-@media (min-width:768px) and (max-width:1124px){
-    main{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:max-content;
+@media (min-width:768px) and (max-width:1124px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: max-content;
     }
-    #actual{
+
+    #actual {
         grid-column: 1/3;
         position: unset;
     }
-    #pedro{
+
+    #pedro {
         padding-top: 1rem;
     }
 }
 
-@media (max-width:767px){
-    main{
+@media (max-width:767px) {
+    main {
         grid-template-columns: 100%;
         grid-template-rows: max-content;
     }
-    #pedro,#personal,#facturacion,#actual{
+
+    #pedro,
+    #personal,
+    #facturacion,
+    #actual {
         grid-column: 1/2;
     }
-    body{
+
+    body {
         background-color: #fff;
-        overflow-y:scroll;
+        overflow-y: scroll;
         text-align: center;
     }
-    #pedro{
+
+    #pedro {
         padding: 1rem;
     }
 }

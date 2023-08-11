@@ -8,6 +8,7 @@
     font-family: MyriadPro;
     src: url(../fonts/myriad-pro-CL/MYRIADPRO-REGULAR.OTF);
 }
+
 /*
    font-family: MyriadPro;
     src: url(./fonts/MyRIADPRO-REGULAR.OTF);
@@ -18,27 +19,30 @@
 */
 
 
-  html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: MyriadPro;
     background-color: #ffffff;
 
-  }
+}
 
 
 .contenedor0 {
     display: grid;
-    grid-template-columns: 1fr auto; 
+    grid-template-columns: 1fr auto;
     text-align: center;
     justify-items: center;
     padding-left: 160px;
-    
+
 }
-.grande{
+
+.grande {
     font-size: 200%;
     margin: 0 0;
 }
+
 .menu {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -66,7 +70,7 @@
 }
 
 .separador {
-    width: calc(80% - 5px); 
+    width: calc(80% - 5px);
     height: 0;
     border-top: 1px solid #000000;
     margin: 1px auto;
@@ -74,23 +78,25 @@
 
 @media (max-width: 600px) {
     .container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         text-align: center;
     }
+
     .menu {
         grid-template-columns: 1fr;
-        grid-gap: 20px; 
+        grid-gap: 20px;
     }
+
     .profile {
         justify-content: center;
-        margin: 20px 0; 
+        margin: 20px 0;
     }
 }
 
 
 .contenedor1 {
     display: grid;
-    grid-template-rows: auto 1fr; 
+    grid-template-rows: auto 1fr;
     padding: 0% 5%;
 
 }
@@ -113,12 +119,13 @@
     padding: 10px;
 }
 
-.pre{
+.pre {
     font-size: 200%;
     text-align: center;
     margin: 0 0;
 }
-.context{
+
+.context {
     text-align: center;
     font-family: MyriadPro-light;
     font-size: 120%;
@@ -130,6 +137,7 @@
     align-items: center;
     height: 100%;
 }
+
 .boton {
     display: inline-block;
     padding: 20px 60px;
@@ -165,12 +173,15 @@ form {
     flex-direction: column;
 }
 
-label, input[type="text"], input[type="date"] {
+label,
+input[type="text"],
+input[type="date"] {
     margin: 0px 0;
     font-size: 16px;
 }
 
-input[type="text"], input[type="date"] {
+input[type="text"],
+input[type="date"] {
     padding: 20px;
     border: 1px solid #868383;
     border-radius: 40px;
@@ -183,14 +194,14 @@ input[type="text"], input[type="date"] {
     height: 115px;
 }
 
-.images{
+.images {
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: center;
 }
 
-.imavis{
+.imavis {
     display: flex;
     background-color: #003cff;
     border-radius: 30%;
@@ -199,90 +210,96 @@ input[type="text"], input[type="date"] {
     padding: 0.4rem;
 }
 
-.visa{
-    
+.visa {
+
     width: 90%;
     height: 90%;
-    }
-.america{
+}
+
+.america {
     width: 15%;
     height: 15%;
 }
 
-.form1{
+.form1 {
     display: flex;
     flex-direction: row;
     gap: 5%;
-    
+
 }
 
 
-.form2{
+.form2 {
     display: flex;
     flex-direction: row;
 
 }
 
-#contacto{
+#contacto {
     width: 109%;
 }
 
-#codigo{
+#codigo {
     width: 89%;
 }
-.codig{
+
+.codig {
     width: 40%;
 }
 
-.form3{
+.form3 {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-#correo{
+
+#correo {
     width: 100%;
 }
 
-.se{
+.se {
     display: flex;
     flex-direction: row;
 }
 
-#cw{
+#cw {
     width: 60%;
 }
-.cw{
+
+.cw {
     width: 40%;
 }
 
-#fechaex{
+#fechaex {
     width: 146%;
 }
 
-.separar{
-    display:flex;
+.separar {
+    display: flex;
     flex-direction: row;
-    gap:70%;
+    gap: 70%;
 }
 
-.separar2{
-    display:flex;
+.separar2 {
+    display: flex;
     flex-direction: row;
-    gap:60%;
+    gap: 60%;
     font-size: 160%;
 }
-.separar3{
-    display:flex;
+
+.separar3 {
+    display: flex;
     flex-direction: row;
-    gap:45%;
+    gap: 45%;
 }
-.orden{
+
+.orden {
     font-size: 200%;
     margin: 0 0;
 }
 
-.texto{
+.texto {
     display: flex;
     text-align: center;
 }
@@ -303,22 +320,24 @@ input[type="text"], input[type="date"] {
     width: 100%;
     box-sizing: border-box;
 }
-.calendario{
+
+.calendario {
     font-size: 20px;
-    color: #000000; 
+    color: #000000;
     position: absolute;
-    left: 25px; 
+    left: 25px;
     top: 55%;
     transform: translateY(-50%);
-  }
+}
 
-  .calen{
+.calen {
     height: 30px;
-  }
+}
 
-  .cambiol{
+.cambiol {
     font-family: MyriadPro-light;
-  }
-  .nom{
+}
+
+.nom {
     font-family: MyriadPro-light;
-  }
+}
