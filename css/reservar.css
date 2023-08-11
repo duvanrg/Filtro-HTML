@@ -293,10 +293,9 @@ input[type="date"] {
 .flechaleft {
   font-size: 40px;
   color: #000000;
-  left: 750px;
+  /* left: 750px;
   top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
+  transform: translateY(-50%); */
 }
 
 .fle {
@@ -306,68 +305,27 @@ input[type="date"] {
 .flecharight {
   font-size: 40px;
   color: #000000;
-  right: 700px;
+  /* right: 700px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 .flechaleft2 {
   font-size: 40px;
   color: #000000;
-  left: 95px;
+  /* left: 95px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
 .flecharight2 {
   font-size: 40px;
   color: #000000;
-  left: 440px;
+  /* left: 440px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
 }
 
-@media screen and (max-width: 1920px) {
-  .fle {
-    height: 40px;
-  }
-
-  .flechaleft {
-    font-size: 40px;
-    color: #000000;
-    position: absolute;
-    left: 700px;
-    top: 50%;
-
-  }
-
-  .flecharight {
-    font-size: 40px;
-    color: #000000;
-    position: absolute;
-    right: 700px;
-    top: 50%;
-
-  }
-
-  .flechaleft2 {
-    font-size: 40px;
-    color: #000000;
-    position: absolute;
-    left: 165px;
-    top: 50%;
-
-  }
-
-  .flecharight2 {
-    font-size: 40px;
-    color: #000000;
-    position: absolute;
-    left: 540px;
-    top: 50%;
-
-  }
-}
 
 .cambiol {
   font-family: MyriadPro-light;
