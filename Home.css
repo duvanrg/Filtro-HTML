@@ -1,0 +1,455 @@
+@font-face {
+    font-family: 'Kollektif';
+    src: url(../fonts/Kollektif-Bold.ttf) format('truetype');
+    src: url(../fonts/Kollektif-BoldItalic.ttf) format('truetype');
+    src: url(../fonts/Kollektif-Italic.ttf) format('truetype');
+    src: url(../fonts/Kollektif.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Myriad';
+    src: url(../fonts/myriad-pro-CL/MyriadPro-Light.otf) format(truetype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+    font-family: 'Myriad', monospace;
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+#header p,
+#main p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#header a,
+#main a {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    height: 72px;
+    width: 246px;
+    border-radius: 50px;
+    background-color: #0050f5;
+    text-decoration: none;
+}
+
+#header button,
+#main button {
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 43px;
+    border-radius: 50px;
+    border: none;
+}
+
+#header {
+    height: 100vh;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.globe {
+    height: 45px;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+#header .tittle,
+#main .tittle {
+    font-size: 57px;
+    line-height: 77px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#header .text,
+#main .text {
+    font-size: 31px;
+    line-height: 43px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#header .subtittle,
+#main .subtittle {
+    font-size: 57px;
+    line-height: 79px;
+    font-weight: bold;
+}
+
+#banner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+}
+
+#banner .image4 {
+    width: 135vh;
+    position: absolute;
+    right: -20%;
+    top: -25%;
+}
+
+#banner .repair-now {
+    display: grid;
+    grid-template-areas: 'logo logo' 'text1 text1' 'text2 text2' 'button1 button2' 'image2 image3';
+    grid-template-rows: auto auto 50px auto auto;
+    column-gap: 25px;
+    width: 800px;
+    justify-self: center;
+}
+
+#banner .repair-now .image1 {
+    grid-area: logo;
+    height: 10em;
+    align-self: self-end;
+    margin-top: 0px;
+}
+
+#banner .repair-now .text1 {
+    grid-area: text1;
+    line-height: 79px;
+    text-align: left;
+    align-self: center;
+    font-weight: bold;
+}
+
+#banner .repair-now .text2 {
+    grid-area: text2;
+    text-align: left;
+    align-self: self-end;
+}
+
+#banner .repair-now .button1 {
+    grid-area: button1;
+    align-self: center;
+    justify-self: end;
+}
+
+#banner .repair-now .button2 {
+    grid-area: button2;
+    align-self: center;
+    justify-self: start;
+}
+
+#banner .repair-now .image2 {
+    grid-area: image2;
+    height: 7rem;
+    align-self: self-start;
+    justify-self: end;
+}
+
+#banner .repair-now .image3 {
+    grid-area: image3;
+    height: 7rem;
+    align-self: self-start;
+    justify-self: start;
+}
+
+#solicita-ya {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: end;
+    gap: 22px;
+    padding: 50px 0;
+}
+
+#solicita-ya .pasos {
+    width: 56.5%;
+    display: grid;
+    grid-template-areas: 'pasos1 pasos2 pasos3';
+    grid-template-columns: repeat(3, 332px);
+    grid-template-rows: auto;
+    place-items: center;
+    place-content: center;
+    padding: 25px 0;
+}
+
+#solicita-ya .pasos1 {
+    grid-area: pasos1;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 18px;
+}
+
+#solicita-ya .pasos2 {
+    grid-area: pasos2;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 18px;
+}
+
+#solicita-ya .pasos3 {
+    grid-area: pasos3;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 18px;
+}
+
+#solicita-ya .image {
+    margin-top: 50px;
+    height: 170px;
+}
+
+#solicita-ya .text {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#solicita-ya .description {
+    font-size: 20px;
+    line-height: 28px;
+    height: 100%;
+}
+
+#tecnicos {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background: url(../images/tecnicos.png) no-repeat padding-box;
+    ;
+    background-size: cover;
+    height: 130vh;
+    width: 100%;
+    gap: 30px;
+    padding-top: 21px;
+}
+
+#precios {
+    display: grid;
+    grid-template-areas: 'tittle tittle tittle' 'texto texto texto' 'tipo1 tipo2 tipo3' 'TyC TyC TyC';
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    padding: 60px 0;
+    width: 80%;
+}
+
+#precios .tittle {
+    grid-area: tittle;
+}
+
+#precios .text {
+    grid-area: texto;
+
+}
+
+#precios .tipo1 {
+    grid-area: tipo1;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#precios .tipo2 {
+    grid-area: tipo2;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#precios .tipo3 {
+    grid-area: tipo3;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+
+#precios .image {
+    height: 262px;
+    margin: 25px 0;
+}
+
+#precios .precio {
+    font-size: 57px;
+    line-height: 79px;
+    font-weight: bold;
+}
+
+#precios .TyC {
+    grid-area: TyC;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+#dispositivos {
+    display: grid;
+    grid-template-areas: 'tittle tittle tittle' 'texto texto texto' 'image1 image2 image3' 'dispo1 dispo2 dispo3' 'TyC TyC TyC';
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 25px;
+    padding: 60px 0;
+    width: 90%;
+}
+
+#dispositivos .tittle {
+    grid-area: tittle;
+}
+
+#dispositivos .text {
+    grid-area: texto;
+}
+
+#dispositivos .image1 {
+    grid-area: image1;
+    align-self: center;
+    justify-self: center;
+    height: 572px;
+}
+
+#dispositivos .image2 {
+    grid-area: image2;
+    align-self: center;
+    justify-self: center;
+    height: 569px;
+}
+
+#dispositivos .image3 {
+    grid-area: image3;
+    align-self: center;
+    justify-self: center;
+    height: 464px;
+}
+
+#dispositivos .dispo1 {
+    grid-area: dispo1;
+    text-align: center;
+    font-size: 45px;
+}
+
+#dispositivos .dispo2 {
+    grid-area: dispo2;
+    text-align: center;
+    font-size: 45px;
+}
+
+#dispositivos .dispo3 {
+    grid-area: dispo3;
+    text-align: center;
+    font-size: 45px;
+}
+
+#dispositivos .TyC {
+    grid-area: TyC;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+#Col {
+    display: grid;
+    grid-template-areas: 'tittle tittle' 'image1 image2' 'texto texto';
+    background: transparent url(../images/Campesinos.png) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    width: 100vw;
+    height: 1074px;
+    place-items: center;
+    place-content: center;
+    gap: 55px 70px;
+}
+
+#Col .tittle {
+    grid-area: tittle;
+}
+
+#Col .amarillo {
+    color: #d1b22a;
+}
+
+#Col .azul {
+    color: #113a7c;
+}
+
+#Col .rojo {
+    color: #b82f3f;
+}
+
+#Col .image1 {
+    grid-area: image1;
+    height: 150px;
+    justify-self: end;
+}
+
+#Col .image2 {
+    grid-area: image2;
+    height: 150px;
+    justify-self: start;
+}
+
+#Col .text {
+    grid-area: texto;
+    width: 70%;
+}
+
+footer {
+    height: calc(12rem - 6px);
+    background-color: #0050f5;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    height: 100%;
+    width: 60%;
+    gap: 5%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+@media (max-width: 1450px) {
+    #banner {
+        grid-template-columns: 1fr;
+    }
+
+    #banner .repair-now .image1 {
+        justify-self: center;
+    }
+
+    #banner .repair-now .text1 {
+        text-align: center;
+    }
+
+    #banner .image4 {
+        position: relative;
+        display: none;
+    }
+
+    .globe {
+        filter: contrast(0) brightness(0);
+    }
+}
